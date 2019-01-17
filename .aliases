@@ -3,16 +3,11 @@
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -28,7 +23,7 @@ fi
 alias l="ls -lF ${colorflag}"
 
 # List all files colorized in long format, excluding . and ..
-alias la="ls -lAF ${colorflag}"
+alias lsa="ls -lAF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -47,6 +42,10 @@ alias sudo='sudo '
 
 # Get week number
 alias week='date +%V'
+
+# Get weather
+alias weather='curl wttr.in/Bergen%20op%20Zoom'
+alias moon='curl wttr.in/Moon'
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
@@ -149,3 +148,23 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+alias cd..="cd .."
+alias lp="ls -p"
+alias h=history
+alias kp="ps auxwww"
+alias ss="/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background &"
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+#alias nginx-stop="sudo launchctl unload /Library/LaunchDaemons/org.macports.nginx.plist"
+#alias nginx-start="sudo launchctl load /Library/LaunchDaemons/org.macports.nginx.plist"
+#alias php-fpm-start="sudo launchctl load /Library/LaunchDaemons/org.macports.php56-fpm.plist"
+#alias php-fpm-stop="sudo launchctl unload /Library/LaunchDaemons/org.macports.php56-fpm.plist"
+#alias composer="php71 /opt/local/bin/composer.phar"
+#alias phpunit="php71 /opt/local/bin/phpunit.phar"
+#alias beanstalk-start="sudo launchctl load /Library/LaunchDaemons/org.macports.beanstalkd.plist"
+#alias beanstalk-stop="sudo launchctl unload /Library/LaunchDaemons/org.macports.beanstalkd.plist"
+#alias postgresql-start="sudo launchctl load /Library/LaunchDaemons/org.macports.postgresql95-server.plist"
+#alias postgresql-stop="sudo launchctl unload /Library/LaunchDaemons/org.macports.postgresql95-server.plist"
+#alias redis-start="sudo port load redis"
+#alias redis-stop="sudo port unload redis"
+
