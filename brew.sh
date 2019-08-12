@@ -75,7 +75,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
+#brew install xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -95,6 +95,9 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+brew install potrace
+brew install brightness
+
 
 # Install other unuseful binaries.
 brew install lolcat
